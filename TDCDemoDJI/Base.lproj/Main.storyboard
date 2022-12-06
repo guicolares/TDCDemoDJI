@@ -1,24 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YMc-2w-Og7">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="r3K-6W-cFH">
+            <objects>
+                <viewController id="YMc-2w-Og7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMy-nb-6bi">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnO-H0-AyT">
+                                <rect key="frame" x="399" y="191.5" width="98" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Demo"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="0q6-DT-Ikf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TGY-mP-dXU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QnO-H0-AyT" firstAttribute="centerY" secondItem="yMy-nb-6bi" secondAttribute="centerY" id="doG-dd-MXi"/>
+                            <constraint firstItem="QnO-H0-AyT" firstAttribute="centerX" secondItem="yMy-nb-6bi" secondAttribute="centerX" id="sl8-gl-Uni"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6q-ze-uuC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-834" y="28"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TDCDemoDJI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8f8-3h-gvH">
+                                <rect key="frame" x="50" y="123.5" width="122.5" height="167"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbw-Gn-rmf">
+                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="sJe-69-SCM"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Turn on Motors"/>
+                                        <connections>
+                                            <action selector="didTapMotors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8XZ-S4-SRv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYX-Cu-mF3">
+                                        <rect key="frame" x="0.0" y="61" width="122.5" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="jlq-e0-VMP"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="TakeOff"/>
+                                        <connections>
+                                            <action selector="didTapTakeOffLanding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HCf-tt-mdW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2F-zB-HSa">
+                                        <rect key="frame" x="0.0" y="122" width="122.5" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="I2Y-E5-sdC"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Mission"/>
+                                        <connections>
+                                            <segue destination="Ipv-PC-NdX" kind="presentation" modalPresentationStyle="fullScreen" id="YIH-Bg-Do5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90196073060000004" green="0.90196073060000004" blue="0.90196073060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8f8-3h-gvH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YZp-Gr-Yob"/>
+                            <constraint firstItem="8f8-3h-gvH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="kif-GR-ZdG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bbs-UU-hE2"/>
+                    <connections>
+                        <outlet property="motorsButton" destination="tbw-Gn-rmf" id="IKF-5t-Z6O"/>
+                        <outlet property="takeOffLandingButton" destination="tYX-Cu-mF3" id="bhM-L7-dXx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="19.419642857142858" y="82.608695652173921"/>
+        </scene>
+        <!--Mission Map View Controller-->
+        <scene sceneID="CvY-gf-CcD">
+            <objects>
+                <viewController storyboardIdentifier="MissionMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ipv-PC-NdX" customClass="MissionMapViewController" customModule="TDCDemoDJI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RQ5-oD-WG9">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hN-Sp-bMX">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-NP-1YF">
+                                <rect key="frame" x="365.5" y="352" width="165" height="32"/>
+                                <segments>
+                                    <segment title="10 meters"/>
+                                    <segment title="20 meters"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8s-9m-9sX">
+                                <rect key="frame" x="778" y="10" width="58" height="31"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                <connections>
+                                    <action selector="didTapClearWaypoints:" destination="Ipv-PC-NdX" eventType="touchUpInside" id="O6S-5N-u5s"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="kYJ-Qd-RXK">
+                                <rect key="frame" x="393.5" y="10" width="109" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-pa-PB6">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="Hwh-jd-G5M"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Prepare Mission"/>
+                                        <connections>
+                                            <action selector="didTapPrepareMission:" destination="Ipv-PC-NdX" eventType="touchUpInside" id="1fq-U7-Ayc"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0y-EN-XX8">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="UTa-he-sIp"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Start Mission"/>
+                                        <connections>
+                                            <action selector="didTapStartStopMission:" destination="Ipv-PC-NdX" eventType="touchUpInside" id="ggr-GX-0D6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-2M-Vdj">
+                                <rect key="frame" x="60" y="10" width="66.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmS-Ek-Kw7">
+                                <rect key="frame" x="60" y="341" width="114" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="VzX-pb-nHF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kCK-7i-xar"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U8s-9m-9sX" firstAttribute="top" secondItem="kCK-7i-xar" secondAttribute="top" constant="10" id="6Ii-JL-PvK"/>
+                            <constraint firstItem="WoL-2M-Vdj" firstAttribute="leading" secondItem="kCK-7i-xar" secondAttribute="leading" constant="16" id="6bj-ac-4TL"/>
+                            <constraint firstItem="HmS-Ek-Kw7" firstAttribute="leading" secondItem="kCK-7i-xar" secondAttribute="leading" constant="16" id="D4D-jd-7y3"/>
+                            <constraint firstItem="WoL-2M-Vdj" firstAttribute="top" secondItem="kCK-7i-xar" secondAttribute="top" constant="10" id="FQB-Uo-wtZ"/>
+                            <constraint firstItem="kCK-7i-xar" firstAttribute="bottom" secondItem="7hN-Sp-bMX" secondAttribute="bottom" id="KE8-7r-rR6"/>
+                            <constraint firstItem="kYJ-Qd-RXK" firstAttribute="top" secondItem="kCK-7i-xar" secondAttribute="top" constant="10" id="LxE-rm-65b"/>
+                            <constraint firstItem="kCK-7i-xar" firstAttribute="bottom" secondItem="HmS-Ek-Kw7" secondAttribute="bottom" constant="16" id="cSE-7w-9pB"/>
+                            <constraint firstItem="7hN-Sp-bMX" firstAttribute="leading" secondItem="kCK-7i-xar" secondAttribute="leading" id="dSx-NO-Siz"/>
+                            <constraint firstItem="kCK-7i-xar" firstAttribute="bottom" secondItem="c4W-NP-1YF" secondAttribute="bottom" constant="10" id="dUZ-Wu-7F0"/>
+                            <constraint firstItem="7hN-Sp-bMX" firstAttribute="top" secondItem="kCK-7i-xar" secondAttribute="top" id="i2r-Q5-SPi"/>
+                            <constraint firstItem="c4W-NP-1YF" firstAttribute="centerX" secondItem="RQ5-oD-WG9" secondAttribute="centerX" id="rHd-Xa-8Rg"/>
+                            <constraint firstItem="kCK-7i-xar" firstAttribute="trailing" secondItem="U8s-9m-9sX" secondAttribute="trailing" constant="16" id="sD6-qM-lLI"/>
+                            <constraint firstItem="kCK-7i-xar" firstAttribute="trailing" secondItem="7hN-Sp-bMX" secondAttribute="trailing" id="udl-cY-DCE"/>
+                            <constraint firstItem="kYJ-Qd-RXK" firstAttribute="centerX" secondItem="RQ5-oD-WG9" secondAttribute="centerX" id="vcE-jr-lG8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k6x-st-VjJ"/>
+                    <connections>
+                        <outlet property="altitudeControl" destination="c4W-NP-1YF" id="ry6-Nj-nVU"/>
+                        <outlet property="clearButton" destination="U8s-9m-9sX" id="5sC-hj-58r"/>
+                        <outlet property="currentAltitudeLabel" destination="HmS-Ek-Kw7" id="6OL-7T-HI0"/>
+                        <outlet property="infoLabel" destination="WoL-2M-Vdj" id="YWf-N3-lXr"/>
+                        <outlet property="mapView" destination="7hN-Sp-bMX" id="nsY-T2-DSN"/>
+                        <outlet property="prepareMissionButton" destination="g2T-pa-PB6" id="bff-tO-HQa"/>
+                        <outlet property="startStopMissionButton" destination="b0y-EN-XX8" id="bog-65-fX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bya-by-az4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-67.633928571428569" y="931.88405797101461"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

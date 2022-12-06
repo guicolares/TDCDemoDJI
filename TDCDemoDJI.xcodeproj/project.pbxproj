@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F94CD18F2A47AC0D893272A /* Pods_TDCDemoDJI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1A71C1C283A60AD63DD5D2 /* Pods_TDCDemoDJI.framework */; };
 		9D21E20B293C6385009BEA65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E20A293C6385009BEA65 /* AppDelegate.swift */; };
-		9D21E20D293C6385009BEA65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E20C293C6385009BEA65 /* SceneDelegate.swift */; };
 		9D21E20F293C6385009BEA65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E20E293C6385009BEA65 /* ViewController.swift */; };
 		9D21E212293C6385009BEA65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D21E210293C6385009BEA65 /* Main.storyboard */; };
 		9D21E214293C6386009BEA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D21E213293C6386009BEA65 /* Assets.xcassets */; };
@@ -16,6 +16,10 @@
 		9D21E222293C6386009BEA65 /* TDCDemoDJITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E221293C6386009BEA65 /* TDCDemoDJITests.swift */; };
 		9D21E22C293C6386009BEA65 /* TDCDemoDJIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E22B293C6386009BEA65 /* TDCDemoDJIUITests.swift */; };
 		9D21E22E293C6386009BEA65 /* TDCDemoDJIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E22D293C6386009BEA65 /* TDCDemoDJIUITestsLaunchTests.swift */; };
+		9D21E23B293C6970009BEA65 /* DroneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E23A293C6970009BEA65 /* DroneService.swift */; };
+		9D4D0497293D882C00A936DA /* FFmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D0496293D882C00A936DA /* FFmpeg.framework */; };
+		9D916542293EF7F800EE1E86 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D916541293EF7F800EE1E86 /* Marker.swift */; };
+		9DBC8E9B293CF4630010CC77 /* MissionMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC8E9A293CF4630010CC77 /* MissionMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D1A71C1C283A60AD63DD5D2 /* Pods_TDCDemoDJI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDCDemoDJI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66141AD40033E4C562F5D3C1 /* Pods-TDCDemoDJI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDCDemoDJI.release.xcconfig"; path = "Target Support Files/Pods-TDCDemoDJI/Pods-TDCDemoDJI.release.xcconfig"; sourceTree = "<group>"; };
+		8F6A1D9614D02C264E39887D /* Pods-TDCDemoDJI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDCDemoDJI.debug.xcconfig"; path = "Target Support Files/Pods-TDCDemoDJI/Pods-TDCDemoDJI.debug.xcconfig"; sourceTree = "<group>"; };
 		9D21E207293C6385009BEA65 /* TDCDemoDJI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDCDemoDJI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D21E20A293C6385009BEA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D21E20C293C6385009BEA65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9D21E20E293C6385009BEA65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D21E211293C6385009BEA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D21E213293C6386009BEA65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		9D21E227293C6386009BEA65 /* TDCDemoDJIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDCDemoDJIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D21E22B293C6386009BEA65 /* TDCDemoDJIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCDemoDJIUITests.swift; sourceTree = "<group>"; };
 		9D21E22D293C6386009BEA65 /* TDCDemoDJIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCDemoDJIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D21E23A293C6970009BEA65 /* DroneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneService.swift; sourceTree = "<group>"; };
+		9D4D0496293D882C00A936DA /* FFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FFmpeg.framework; path = Pods/DJIWidget/FFmpeg/FFmpeg.framework; sourceTree = "<group>"; };
+		9D916541293EF7F800EE1E86 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		9DBC8E9A293CF4630010CC77 /* MissionMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F94CD18F2A47AC0D893272A /* Pods_TDCDemoDJI.framework in Frameworks */,
+				9D4D0497293D882C00A936DA /* FFmpeg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0688E8CDE29A7B078D2BF22B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D4D0496293D882C00A936DA /* FFmpeg.framework */,
+				4D1A71C1C283A60AD63DD5D2 /* Pods_TDCDemoDJI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E9CA9AAA062C0E4E8A0945D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F6A1D9614D02C264E39887D /* Pods-TDCDemoDJI.debug.xcconfig */,
+				66141AD40033E4C562F5D3C1 /* Pods-TDCDemoDJI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D21E1FE293C6385009BEA65 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				9D21E220293C6386009BEA65 /* TDCDemoDJITests */,
 				9D21E22A293C6386009BEA65 /* TDCDemoDJIUITests */,
 				9D21E208293C6385009BEA65 /* Products */,
+				2E9CA9AAA062C0E4E8A0945D /* Pods */,
+				0688E8CDE29A7B078D2BF22B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +131,14 @@
 		9D21E209293C6385009BEA65 /* TDCDemoDJI */ = {
 			isa = PBXGroup;
 			children = (
+				9DBC8E99293CF4400010CC77 /* MissionView */,
 				9D21E20A293C6385009BEA65 /* AppDelegate.swift */,
-				9D21E20C293C6385009BEA65 /* SceneDelegate.swift */,
 				9D21E20E293C6385009BEA65 /* ViewController.swift */,
 				9D21E210293C6385009BEA65 /* Main.storyboard */,
 				9D21E213293C6386009BEA65 /* Assets.xcassets */,
 				9D21E215293C6386009BEA65 /* LaunchScreen.storyboard */,
 				9D21E218293C6386009BEA65 /* Info.plist */,
+				9D21E23A293C6970009BEA65 /* DroneService.swift */,
 			);
 			path = TDCDemoDJI;
 			sourceTree = "<group>";
@@ -127,6 +160,15 @@
 			path = TDCDemoDJIUITests;
 			sourceTree = "<group>";
 		};
+		9DBC8E99293CF4400010CC77 /* MissionView */ = {
+			isa = PBXGroup;
+			children = (
+				9DBC8E9A293CF4630010CC77 /* MissionMapViewController.swift */,
+				9D916541293EF7F800EE1E86 /* Marker.swift */,
+			);
+			path = MissionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D21E231293C6386009BEA65 /* Build configuration list for PBXNativeTarget "TDCDemoDJI" */;
 			buildPhases = (
+				EAAB5DC9D579FD00FF4E7845 /* [CP] Check Pods Manifest.lock */,
 				9D21E203293C6385009BEA65 /* Sources */,
 				9D21E204293C6385009BEA65 /* Frameworks */,
 				9D21E205293C6385009BEA65 /* Resources */,
+				D8F4DA6C9670479E428B1DD3 /* [CP] Embed Pods Frameworks */,
+				223FC7861B40A447DBDC028D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,14 +298,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		223FC7861B40A447DBDC028D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDCDemoDJI/Pods-TDCDemoDJI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDCDemoDJI/Pods-TDCDemoDJI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TDCDemoDJI/Pods-TDCDemoDJI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F4DA6C9670479E428B1DD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDCDemoDJI/Pods-TDCDemoDJI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDCDemoDJI/Pods-TDCDemoDJI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TDCDemoDJI/Pods-TDCDemoDJI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAAB5DC9D579FD00FF4E7845 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TDCDemoDJI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D21E203293C6385009BEA65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9D21E20F293C6385009BEA65 /* ViewController.swift in Sources */,
+				9DBC8E9B293CF4630010CC77 /* MissionMapViewController.swift in Sources */,
 				9D21E20B293C6385009BEA65 /* AppDelegate.swift in Sources */,
-				9D21E20D293C6385009BEA65 /* SceneDelegate.swift in Sources */,
+				9D21E23B293C6970009BEA65 /* DroneService.swift in Sources */,
+				9D916542293EF7F800EE1E86 /* Marker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +456,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -366,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -410,6 +517,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -420,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,22 +540,37 @@
 		};
 		9D21E232293C6386009BEA65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F6A1D9614D02C264E39887D /* Pods-TDCDemoDJI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4WCBGWTR5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/DJIWidget/FFmpeg",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TDCDemoDJI/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is required for communicating with some DJI hardware.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Gets location of the phone to calculate distance to aircraft";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Gets location of the phone to calculate distance to aircraft";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to record voice messages for broadcasting using the speaker accessory.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/VideoPreviewer/VideoPreviewer/ffmpeg/lib",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.guicolares.TDCDemoDJI;
@@ -460,22 +583,37 @@
 		};
 		9D21E233293C6386009BEA65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66141AD40033E4C562F5D3C1 /* Pods-TDCDemoDJI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4WCBGWTR5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/DJIWidget/FFmpeg",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TDCDemoDJI/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is required for communicating with some DJI hardware.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Gets location of the phone to calculate distance to aircraft";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Gets location of the phone to calculate distance to aircraft";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to record voice messages for broadcasting using the speaker accessory.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/VideoPreviewer/VideoPreviewer/ffmpeg/lib",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.guicolares.TDCDemoDJI;
